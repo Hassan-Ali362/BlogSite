@@ -5,9 +5,8 @@ import avatarimg from '../assets/Pictures/avatar.jpg'
 function AvatarMenu() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
-  const menuRef = useRef(null);  
+  const menuRef = useRef(null);
 
-  // Close menu when clicking outside
   useEffect(() => {
     function handleClickOutside(e) {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
@@ -56,7 +55,7 @@ function AvatarMenu() {
             }}
             className="block w-full text-left px-4 py-2 hover:bg-pink-400 rounded-xl text-gray-700"
           >
-            📄 My Posts
+            My Posts
           </button>
         </div>
       )}
